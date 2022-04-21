@@ -59,6 +59,13 @@ jobs:
                 apt-get install -q -y git texinfo bison flex gettext libgmp3-dev \
                 libmpfr-dev libmpc-dev make build-essential
                 apt-get autoclean
+                export PS2DEV=$PWD/ps2dev
+                export PS2SDK=$PS2DEV/ps2sdk
+                export GSKIT=$PS2DEV/gsKit
+                export PATH=$PATH:$PS2DEV/bin:$PS2DEV/ee/bin:$PS2DEV/iop/bin:$PS2DEV/dvp/bin:$PS2SDK/bin
+                git clone https://github.com/ps2dev/ps2dev
+                cd ps2dev
+                ./build-all.sh
                 ;;
               #fedora*)
                # dnf -y update
