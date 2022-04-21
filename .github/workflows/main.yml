@@ -57,7 +57,7 @@ jobs:
               ubuntu*|jessie|stretch|buster|bullseye)
                 apt-get update -q -y
                 apt-get install -q -y git texinfo bison flex gettext libgmp3-dev \
-                libmpfr-dev libmpc-dev make build-essential
+                libmpfr-dev libmpc-dev make build-essential wget patch
                 apt-get autoclean
                 export PS2DEV=$PWD/ps2dev
                 export PS2SDK=$PS2DEV/ps2sdk
