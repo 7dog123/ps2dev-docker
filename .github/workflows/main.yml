@@ -65,7 +65,8 @@ jobs:
                 export PATH=$PATH:$PS2DEV/bin:$PS2DEV/ee/bin:$PS2DEV/iop/bin:$PS2DEV/dvp/bin:$PS2SDK/bin
                 git clone https://github.com/ps2dev/ps2toolchain-ee
                 cd ps2toolchain-ee
-                ./toolchain-sudo.sh
+                ./scripts/001-binutils.sh
+                ./scripts/002-gcc-stage1.sh
                 ;;
               #fedora*)
                # dnf -y update
