@@ -70,11 +70,6 @@ jobs:
                 git clone https://github.com/ps2dev/ps2toolchain-iop
                 cd ps2toolchain-iop
                 ./toolchain.sh
-                cd ../
-                git clone https://github.com/ps2dev/ps2toolchain-ee
-                cd ps2toolchain-ee
-                ./scripts/001-binutils.sh
-                ./scripts/002-gcc-stage1.sh
                 ;;
               #fedora*)
                # dnf -y update
